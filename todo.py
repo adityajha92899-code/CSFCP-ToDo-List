@@ -41,3 +41,14 @@ def main():
 
 if __name__ == "__main__":
     main()
+    def view_tasks(tasks):
+    print("\n--- Your Tasks ---")
+    if not tasks:
+        print("Your to-do list is empty.")
+    else:
+        for index, task in enumerate(tasks, start=1):
+            print(f"{index}. {task}")
+
+# (Inside main function, update the elif block:)
+        elif choice == '2':
+            view_tasks(tasks)
