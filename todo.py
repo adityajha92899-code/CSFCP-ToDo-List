@@ -49,6 +49,5 @@ if __name__ == "__main__":
         for index, task in enumerate(tasks, start=1):
             print(f"{index}. {task}")
 
-# (Inside main function, update the elif block:)
         elif choice == '2':
             view_tasks(tasks)
